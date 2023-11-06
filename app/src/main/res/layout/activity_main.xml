@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context=".MainActivity">
+
+    <!-- ImageView for Music Icon -->
+    <!-- Replace with your music icon image -->
+
+
+    <!-- Play Button -->
+
+    <ImageView
+        android:id="@+id/music_icon_imageview"
+        android:layout_width="182dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/prev_button"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="124dp"
+        android:layout_marginTop="66dp"
+        android:layout_marginEnd="121dp"
+        android:layout_marginBottom="265dp"
+        android:src="@drawable/music_icon" />
+
+    <Button
+        android:id="@+id/play_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Play"
+        android:layout_centerHorizontal="true" />
+
+    <!-- Pause Button -->
+    <Button
+        android:id="@+id/pause_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Pause"
+        android:layout_below="@+id/play_button"
+        android:layout_centerHorizontal="true" />
+
+    <!-- Next Song Button -->
+    <Button
+        android:id="@+id/next_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Next Song"
+        android:layout_below="@+id/pause_button"
+        android:layout_centerHorizontal="true" />
+
+    <!-- Previous Song Button -->
+    <Button
+        android:id="@+id/prev_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Previous Song"
+        android:layout_below="@+id/next_button"
+        android:layout_centerHorizontal="true" />
+
+</RelativeLayout>
